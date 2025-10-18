@@ -1,40 +1,33 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dr Digibyte | ترمینال معرفی</title>
+  <title>Dr Digibyte | Terminal Mode</title>
   <style>
     body {
       margin: 0;
-      padding: 40px;
-      background: url('https://images.unsplash.com/photo-1605902711622-cfb43c4437d1?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
-      background-size: cover;
+      padding: 20px;
+      background-color: #000;
       color: #00ff00;
       font-family: 'Courier New', monospace;
       font-size: 16px;
-      backdrop-filter: brightness(0.2) blur(2px);
     }
-    .terminal {
-      background-color: rgba(0, 0, 0, 0.8);
-      padding: 30px;
-      border-radius: 10px;
-      max-width: 800px;
-      margin: auto;
-      box-shadow: 0 0 20px #00ff00;
-    }
-    .line::before {
+    .cmd-line::before {
       content: "C:\\Users\\DrDigibyte>";
       color: #00ccff;
-      margin-left: 5px;
+      margin-right: 8px;
     }
     a {
-      color: #ffcc00;
+      color: #ffff00;
       text-decoration: none;
     }
     a:hover {
       text-decoration: underline;
     }
-    .blink {
+    .cursor {
+      display: inline-block;
+      width: 10px;
+      background-color: #00ff00;
       animation: blink 1s steps(1) infinite;
     }
     @keyframes blink {
@@ -43,13 +36,11 @@
   </style>
 </head>
 <body>
-  <div class="terminal">
-    <div class="line">سلام، من سروش هستم</div>
-    <div class="line">کارشناس ارشد مخابرات و شبکه</div>
-    <div class="line">علاقه‌مند به آموزش، تکنولوژی، و ساخت ابزارهای دیجیتال</div>
-    <div class="line">یوتیوب: <a href="https://www.youtube.com/@DrDigibyte" target="_blank">youtube.com/@DrDigibyte</a></div>
-    <div class="line">اینستاگرام: <a href="https://www.instagram.com/drdigibyte" target="_blank">instagram.com/drdigibyte</a></div>
-    <div class="line blink">█</div>
-  </div>
+  <div class="cmd-line">Hi, I'm Soroush</div>
+  <div class="cmd-line">I'm a telecom and network engineer</div>
+  <div class="cmd-line">I create digital tools and educational content</div>
+  <div class="cmd-line">YouTube: <a href="https://www.youtube.com/@DrDigibyte" target="_blank">youtube.com/@DrDigibyte</a></div>
+  <div class="cmd-line">Instagram: <a href="https://www.instagram.com/drdigibyte" target="_blank">instagram.com/drdigibyte</a></div>
+  <div class="cmd-line"><span class="cursor">&nbsp;</span></div>
 </body>
 </html>
