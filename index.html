@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dr Digibyte | Terminal Mode</title>
+  <title>Dr Digibyte | Terminal</title>
   <style>
     body {
-      margin: 0;
-      padding: 20px;
       background-color: #000;
       color: #00ff00;
       font-family: 'Courier New', monospace;
       font-size: 16px;
+      padding: 40px;
+      white-space: pre;
     }
-    .cmd-line::before {
+    .prompt::before {
       content: "C:\\Users\\DrDigibyte>";
       color: #00ccff;
       margin-right: 8px;
@@ -24,23 +24,31 @@
     a:hover {
       text-decoration: underline;
     }
-    .cursor {
+    .ascii-box {
+      border: 1px solid #00ff00;
+      padding: 1em;
+      margin-top: 2em;
       display: inline-block;
-      width: 10px;
-      background-color: #00ff00;
-      animation: blink 1s steps(1) infinite;
-    }
-    @keyframes blink {
-      50% { opacity: 0; }
     }
   </style>
 </head>
 <body>
-  <div class="cmd-line">Hi, I'm Soroush</div>
-  <div class="cmd-line">I'm a telecom and network engineer</div>
-  <div class="cmd-line">I create digital tools and educational content</div>
-  <div class="cmd-line">YouTube: <a href="https://www.youtube.com/@DrDigibyte" target="_blank">youtube.com/@DrDigibyte</a></div>
-  <div class="cmd-line">Instagram: <a href="https://www.instagram.com/drdigibyte" target="_blank">instagram.com/drdigibyte</a></div>
-  <div class="cmd-line"><span class="cursor">&nbsp;</span></div>
+  <div class="prompt">whoami</div>
+
+  <div class="ascii-box">
+    ╔════════════════════════════════════════════════════════════╗
+    ║                      Dr Digibyte                           ║
+    ║        Telecom & Network Engineer | Tech Educator         ║
+    ╚════════════════════════════════════════════════════════════╝
+
+    📺 YouTube   →  https://youtube.com/@DrDigibyte  
+    📷 Instagram →  https://instagram.com/dr_digibyte
+
+    Passionate about building digital tools,  
+    teaching real-world tech, and staying hands-on.
+
+    ──────────────────────────────────────────────────────────────
+    Tip: Type 'exit' to close this session. (Just kidding 😉)
+  </div>
 </body>
 </html>
